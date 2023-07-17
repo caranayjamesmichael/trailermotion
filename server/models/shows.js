@@ -16,7 +16,7 @@ const shows = [
     ratings: 5,
   },
   {
-    id: 0,
+    id: 2,
     title: "The Boy",
     description: "A horror boy movie",
     genre: "horror",
