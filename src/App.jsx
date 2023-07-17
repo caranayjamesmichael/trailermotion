@@ -1,7 +1,9 @@
+import Home from "./pages/Home";
+
 const App = () => {
   return (
     <>
-      <h1 className="underline">Hello World</h1>
+      <Home />
     </>
   );
 };
