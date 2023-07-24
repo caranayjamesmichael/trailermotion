@@ -1,0 +1,125 @@
+{
+  "shows": [
+    {
+      "id": 0,
+      "genre": "Action",
+      "imageURL": "https://cdn.arstechnica.net/wp-content/uploads/2017/10/bladerunner2049-poster.jpg",
+      "newRelease": true,
+      "ratings": 4,
+      "title": "Bladerunner 2049",
+      "trailerURL": "./bladerunner.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 1,
+      "genre": "Horror",
+      "imageURL": "https://image.tmdb.org/t/p/original/gmU7P3FzGFsl2wiSDhx9znZCNub.jpg",
+      "newRelease": false,
+      "ratings": 5,
+      "title": "The Dark Knight",
+      "trailerURL": "./batman.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Series"
+    },
+    {
+      "id": 2,
+      "genre": "Comedy",
+      "imageURL": "https://images3.alphacoders.com/804/thumb-1920-804496.jpg",
+      "newRelease": true,
+      "ratings": 5,
+      "title": "21 Jump Street",
+      "trailerURL": "./21.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 3,
+      "genre": "SciFi",
+      "imageURL": "https://www.tralfaz.com/wp-content/uploads/2018/03/valerian-final-poster-header.jpg",
+      "newRelease": true,
+      "ratings": 3,
+      "title": "Valerian",
+      "trailerURL": "./valerian.mkv",
+      "releaseDate": "2022-22-17",
+      "type": "Series"
+    },
+    {
+      "id": 4,
+      "genre": "SciFi",
+      "imageURL": "https://th.bing.com/th/id/R.157492423544f8a7521ac0ee4352f89b?rik=04Pp4T%2fZyiJN4g&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2014%2f11%2fInterstellar-movie-still-015.jpg&ehk=3CfhUQ1K7Ueya%2b1AB3aha26j70VsYAz0NmB1Niahoco%3d&risl=&pid=ImgRaw&r=0"  ,
+      "newRelease": true,
+      "ratings": 4,
+      "title": "Interstellar",
+      "trailerURL": "./interstellar.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 5,
+      "genre": "Horror",
+      "imageURL": "https://is5-ssl.mzstatic.com/image/thumb/Video113/v4/cc/e3/d0/cce3d0b5-86ff-9b51-eade-cc0705baf398/SPE_EVIL_DEAD_2013_TH_WW_ARTWORK_EN_3840x2160_J1BXQ000003FZ.png/1600x900.jpg",
+      "newRelease": true,
+      "ratings": 3,
+      "title": "Evil Dead: Rise",
+      "trailerURL": "./evildead.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 6,
+      "genre": "Horror",
+      "imageURL": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVlhKULVtR-NhIISdfTQzaUIcs4gnoejObRYHzO4B8s7JpaU3MyeqT7sm9LvBZWBLPH-YRavLdhikAllaWIdYHs9q_FOZWyFhMTLMJ_fs3a5bayCfUoINkzmdN2d9Kqf1qjwDmoxCv8Jp-HhnGLg7jBveGIGFbAENqR3O8L4TQIa3DaLiabVEqebkGwA/s16000/oppenheimer-ibomma.jpg",
+      "newRelease": true,
+      "ratings": 3,
+      "title": "Oppenheimer",
+      "trailerURL": "./oppenheimer.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 7,
+      "genre": "Action",
+      "imageURL": "https://img.gurugamer.com/resize/740x-/2020/07/03/john-wick-7-f4b6.jpg",
+      "newRelease": true,
+      "ratings": 3,
+      "title": "John Wick Chapter 4",
+      "trailerURL": "./johnwick.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 8,
+      "genre": "Comedy",
+      "imageURL": "https://i1.wp.com/nwasianweekly.com/wp-content/uploads/2019/12/MOVIES-Jumanji.jpeg?resize=3840%2C2160",
+      "newRelease": true,
+      "ratings": 5,
+      "title": "Jumanji",
+      "trailerURL": "./jumanji.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 9,
+      "genre": "Comedy",
+      "imageURL": "https://filmograd.net/wp-content/uploads/2020/09/bad-boys-for-life-featured-1.jpg",
+      "newRelease": true,
+      "ratings": 5,
+      "title": "Bad Boys For Life",
+      "trailerURL": "./badboys.mp4",
+      "releaseDate": "2022-22-17",
+      "type": "Movie"
+    },
+    {
+      "id": 10,
+      "genre": "Comedy",
+      "imageURL": "https://image.tmdb.org/t/p/original/aNrcxmzCZc1Tgze4jOwJrwk7tCl.jpg",
+      "newRelease": true,
+      "ratings": 5,
+      "title": "The Boys",
+      "trailerURL": "./theboys.mkv",
+      "releaseDate": "2022-22-17",
+      "type": "Series"
+    }
+  ]
+}
