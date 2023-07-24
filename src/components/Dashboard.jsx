@@ -11,6 +11,7 @@ import bellNotificationIcon from "../assets/images/notification.png";
 import Shows from "./Shows.jsx";
 
 const Dashboard = () => {
+  const [users, setUsers] = useState([]);
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
   const [hasNotifications, setHasNotifications] = useState(false);
 
@@ -87,34 +88,9 @@ const Dashboard = () => {
       <Navbar
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
-        shows={shows}
       />
 
       <div className="w-full min-h-screen bg-[rgba(30,30,36,255)] lg:px-10">
-        <div className="h-24 hidden lg:flex">
-          <div className="flex items-center px-10 w-1/2">
-            <form className="flex gap-5 px-3 py-2 bg-[#171717]">
-              <img className="w-6" src={searchIcon}></img>
-              <input
-                className="bg-transparent outline-none text-white"
-                type="text"
-                placeholder="Search here..."
-              ></input>
-            </form>
-          </div>
-          <div className="flex justify-end gap-5 items-center px-10 w-1/2">
-            <a href="#">
-              <img
-                className="w-5"
-                src={
-                  hasNotifications === true ? bellNotificationIcon : bellIcon
-                }
-              ></img>
-            </a>
-            <Avatar isUserLoggedIn={isUserLoggedIn} />
-          </div>
-        </div>
-
         <div className="h-[400px] lg:h-[700px] flex items-center justify-start lg:px-10 relative">
           {isLoading && isTrailerLoading ? (
             <p>Loading shows...</p>
@@ -219,7 +195,7 @@ const Dashboard = () => {
                     <p className="text-center">Action</p>
                   </button>
                 </li>
-                <li className="w-1/2 lg:w-24  text-center">
+                <li className="w-1/2 lg:w-24 text-center">
                   <button
                     className="font-bebas lg:text-[1.4rem] hover:text-red-600 px-5 py-1"
                     onClick={filterComedyShows}
