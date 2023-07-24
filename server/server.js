@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import showsRoutes from "./routes/showsRoutes.js";
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 
