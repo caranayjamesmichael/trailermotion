@@ -11,10 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route
-            path="https://trailermotion.vercel.app/movies"
-            element={<Movies />}
-          ></Route>
+          <Route exact path="/movies" element={<Movies />}></Route>
           <Route path="/series" element={<Series />}></Route>
           <Route path="/toprated" element={<TopRated />}></Route>
           <Route path="/trailer" element={<Trailer />}></Route>
