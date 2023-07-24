@@ -1,65 +1,43 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
 
-const Banner = () => {
-  const [shows, setShows] = useState([]);
+const Banner = ({ shows }) => {
+  const [currentShowIndex, setCurrentShowIndex] = useState(0);
 
   useEffect(() => {
-    const getAllShows = async () => {
-      const response = await axios.get("http://localhost:8000/api/shows");
-      setShows(response.data);
-    };
+    const interval = setInterval(() => {
+      setCurrentShowIndex((prevIndex) => (prevIndex + 1) % shows.length);
+    }, 5000);
 
-    getAllShows();
-  }, []);
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [shows.length]); // Add shows.length as a dependency to the useEffect to recompute the interval when shows change
 
   return (
-    <div>
-      {shows.map((show) => (
-        <div
-          className="flex justify-around items-center h-screen w-full"
-          style={{
-            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0)), url(${show.imageURL})`,
-            backgroundSize: "cover",
-          }}
-          key={show.id}
-        >
-          <div className="w-100">
-            <h2 className="text-white text-[2.5rem]">
-              Watch the latest trailers
-            </h2>
-            <p className="text-white">
-              <small>
-                With thousands of movie trailers across all genres which is
-                trusted by big companies
-              </small>
-            </p>
-            <div className="flex justify-between">
-              <a
-                className="bg-violet-700 text-white px-16 py-2 mt-10 rounded"
-                href="#"
-              >
-                BROWSE
-              </a>
-              <a
-                className="bg-violet-700 text-white px-16 py-2 mt-10 rounded"
-                href="#"
-              >
-                REVIEW
-              </a>
-            </div>
-          </div>
-          <div>
-            <video
-              className=" w-100 rounded mt-96"
-              src={show.trailerURL}
-              muted
-              autoPlay
-              loop
-            ></video>
-          </div>
-        </div>
-      ))}
+    <div
+      className="w-full h-full lg:h-5/6 max-h-full lg:rounded-3xl relative shadow-lg bg-cover bg-center banner-transition"
+      style={{
+        backgroundImage: `url(${shows[currentShowIndex].imageURL})`,
+      }}
+    >
+      <div className="absolute bottom-0 lg:top-0 bg-[rgba(37, 38, 45)] w-full lg:h-full rounded-3xl flex items-center">
+        <p className="absolute bottom-44 left-10 text-[2.5rem] text-white font-bebas">
+          {shows[currentShowIndex].title}
+        </p>
+        <p className="absolute bottom-36 left-10  text-white font-bebas">
+          Genre:{" "}
+          <span className="bg-[rgba(30,30,36,255)] px-2 py-0.5 rounded ml-1">
+            {shows[currentShowIndex].genre}
+          </span>
+        </p>
+        <p className="absolute bottom-28 left-10 text-white font-bebas">
+          IMDB: <span>{shows[currentShowIndex].ratings}</span>
+        </p>
+        <a href="#">
+          <p className="absolute bottom-10 left-10 bg-red-600 text-white px-7 py-3 rounded-lg shadow-2xl shadow-red-600 font-bebas">
+            Watch
+          </p>
+        </a>
+      </div>
     </div>
   );
 };
