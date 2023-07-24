@@ -7,6 +7,7 @@ import showIcon from "../assets/images/tv.png";
 import starIcon from "../assets/images/star.png";
 import logoutIcon from "../assets/images/logout.png";
 import dropdown from "../assets/images/down.png";
+import gearIcon from "../assets/images/gear.png"
 
 const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
   const [dropdownStatus, setDropdownStatus] = useState(false);
@@ -60,7 +61,7 @@ const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
             </a>
             <a
               className="flex items-center text-[#676a7c] hover:border-l-4 hover:border-red-500 px-14 duration-200 font-bebas"
-              href="#"
+              href="/genres"
             >
               <img className="w-5" src={showIcon}></img>
               <p className="px-3">Genre</p>
@@ -82,22 +83,28 @@ const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
               className="flex items-center text-[#676a7c] hover:border-l-4 hover:border-red-500 px-14 duration-200 font-bebas"
               href="#"
             >
-              <img className="w-5" src={homeIcon}></img>
+              <img className="w-5" src={gearIcon}></img>
               <p className="px-3">Settings</p>
             </a>
+
             <a
               className="flex items-center text-[#676a7c] hover:border-l-4 hover:border-red-500 px-14 duration-200 font-bebas"
               href="#"
-              onClick={handleLogin}
             >
               <img className="w-5" src={logoutIcon}></img>
               <p className="px-3">{isUserLoggedIn ? "Logout" : "Login"}</p>
             </a>
+           
+
           </li>
         </ul>
       </div>
 
-      <div className={`${dropdownStatus ? "" : "hidden"} lg:block w-full py-9 lg:py-0`}>
+      <div
+        className={`${
+          dropdownStatus ? "" : "hidden"
+        } lg:block w-full py-9 lg:py-0`}
+      >
         <p className="text-[#676a7c] text-center">
           <small>© Trailermotion. 2023</small>
         </p>
@@ -111,6 +118,7 @@ const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
           <img className="w-10" src={dropdown}></img>
         </button>
       </div>
+
     </div>
   );
 };
