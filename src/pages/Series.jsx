@@ -21,7 +21,7 @@ const Series = () => {
   return (
     <div className="flex bg-[rgba(30,30,36,255)]">
       <Navbar />
-      <div className="px-10 py-10">
+      <div className="w-full px-10 py-10">
         <h2 className="font-bebas text-[2.5rem] text-white">TV Show Trailers</h2>
         <Shows shows={shows}></Shows>
       </div>
