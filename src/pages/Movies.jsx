@@ -19,7 +19,7 @@ const Movies = () => {
   }, []);
 
   return (
-    <div className="flex bg-[rgba(30,30,36,255)]">
+    <div className="flex flex-col lg:flex-row bg-[rgba(30,30,36,255)]">
       <Navbar />
 
       

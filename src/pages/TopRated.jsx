@@ -19,7 +19,7 @@ const TopRated = () => {
   }, []);
 
   return (
-    <div className="flex bg-[rgba(30,30,36,255)]">
+    <div className="flex flex-col lg:flex-row bg-[rgba(30,30,36,255)]">
       <Navbar />
       <div className="w-full px-10 py-10">
         <h2 className="font-bebas text-[2.5rem] text-white">Top Rated Trailers</h2>
