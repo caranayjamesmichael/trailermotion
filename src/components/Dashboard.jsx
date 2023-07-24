@@ -149,7 +149,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="px-10 py-10">
+        <div id="showContainer" className="px-10 py-10">
           <div className="flex flex-col-reverse lg:flex-row lg:justify-between">
             <div className="pt-14 lg:pt-0 ">
               <ul className="flex flex-wrap justify-around items-center lg:flex-row lg:gap-20 text-white">
