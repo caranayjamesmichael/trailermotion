@@ -24,31 +24,31 @@ const Footer = () => {
       </div>
       <div className="flex gap-20 lg:gap-0 justify-around w-1/4 p-10">
         <ul className=" flex flex-col gap-2 pt-10">
-          <h2 className="text-[#676a7c] font-semibold pb-3">
+          <h2 className="text-[#676a7c] font-semibold pb-3 px-3">
             <small>Links</small>
           </h2>
 
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/home">
               Home
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/movies">
               Movies
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/series">
               Tv Shows
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/genres">
               Genre
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/toprated">
               Top Rated
             </a>
@@ -56,26 +56,26 @@ const Footer = () => {
         </ul>
 
         <ul className=" flex flex-col pt-10 gap-2">
-          <h2 className="text-[#676a7c] font-semibold pb-3">
+          <h2 className="text-[#676a7c] font-semibold pb-3 px-3">
             <small>Genres</small>
           </h2>
 
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/genres">
               Horror
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/genres">
               Action
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/genres">
               Science Fiction
             </a>
           </li>
-          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas">
+          <li className="text-white hover:border-l-4 hover:border-red-500 duration-200 font-bebas px-3">
             <a className="underline" href="/genres">
               Comedy
             </a>
