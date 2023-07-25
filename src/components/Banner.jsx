@@ -20,16 +20,16 @@ const Banner = ({ shows }) => {
       }}
     >
       <div className="absolute bottom-0 lg:top-0 bg-[rgba(37, 38, 45)] w-full lg:h-full rounded-3xl flex items-center">
-        <p className="absolute bottom-44 left-10 text-[2.5rem] text-white font-bebas">
+        <p className="absolute bottom-44 left-10 text-[2.5rem] text-white font-bebas" style={{textShadow: "0px 2px 5px black"}}>
           {shows[currentShowIndex].title}
         </p>
-        <p className="absolute bottom-36 left-10  text-white font-bebas">
+        <p className="absolute bottom-36 left-10  text-white font-bebas" style={{textShadow: "0px 2px 5px black"}}>
           Genre:{" "}
           <span className="bg-[rgba(30,30,36,255)] px-2 py-0.5 rounded ml-1">
             {shows[currentShowIndex].genre}
           </span>
         </p>
-        <p className="absolute bottom-28 left-10 text-white font-bebas">
+        <p className="absolute bottom-28 left-10 text-white font-bebas" style={{textShadow: "0px 2px 5px black"}}>
           IMDB: <span>{shows[currentShowIndex].ratings}</span>
         </p>
         <a href="#showContainer">
