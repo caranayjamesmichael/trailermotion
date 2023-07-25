@@ -8,6 +8,7 @@ import starIcon from "../assets/images/star.png";
 import logoutIcon from "../assets/images/logout.png";
 import dropdown from "../assets/images/down.png";
 import gearIcon from "../assets/images/gear.png"
+import genreIcon from "../assets/images/genre.png"
 
 const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
   const [dropdownStatus, setDropdownStatus] = useState(false);
@@ -63,7 +64,7 @@ const Navbar = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
               className="flex items-center text-[#676a7c] hover:border-l-4 hover:border-red-500 px-14 duration-200 font-bebas"
               href="/genres"
             >
-              <img className="w-5" src={showIcon}></img>
+              <img className="w-5" src={genreIcon}></img>
               <p className="px-3">Genre</p>
             </a>
             <a
