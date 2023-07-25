@@ -25,7 +25,7 @@ const ShowItem = ({ show }) => {
         <div className=" w-3/4">
           <h4>
             <b>
-              <strong>{show.title + " "}<span className={`text-[0.5rem] ${show.newRelease ? "bg-green-600 p-1" : "bg-red-600"}`}>{show.newRelease ? "NEW" : ""}</span></strong>
+              <strong>{show.title + " "}<span className={`text-[0.5rem] rounded ${show.newRelease ? "bg-green-600 p-1" : "bg-red-600"}`}>{show.newRelease ? "NEW" : ""}</span></strong>
             </b>
           </h4>
 
