@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-20 lg:gap-0 justify-around w-1/4 p-10">
-        <ul className=" flex flex-col pt-10">
+        <ul className=" flex flex-col gap-2 pt-10">
           <h2 className="text-[#676a7c] font-semibold pb-3">
             <small>Links</small>
           </h2>
@@ -55,7 +55,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className=" flex flex-col pt-10">
+        <ul className=" flex flex-col pt-10 gap-2">
           <h2 className="text-[#676a7c] font-semibold pb-3">
             <small>Genres</small>
           </h2>
