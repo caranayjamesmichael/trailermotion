@@ -23,11 +23,21 @@ const ShowItem = ({ show }) => {
 
       <div className={`flex p-5 bg-[rgba(37, 38, 45, 0.8)]`}>
         <div className=" w-3/4">
-          <h4>
-            <b>
-              <strong>{show.title + " "}<span className={`text-[0.5rem] rounded ${show.newRelease ? "bg-green-600 p-1" : "bg-red-600"}`}>{show.newRelease ? "NEW" : ""}</span></strong>
-            </b>
-          </h4>
+          <div className="flex gap-2 items-center">
+            <h4>
+              <b>
+                <strong>{show.title + " "}</strong>
+              </b>
+            </h4>
+
+            <span
+              className={`text-[0.5rem] rounded text-center h-full ${
+                show.newRelease ? "bg-green-600 p-1" : "bg-red-600"
+              }`}
+            >
+              {show.newRelease ? "NEW" : ""}
+            </span>
+          </div>
 
           <div className="flex ml-[-8px]">
             <p className="mt-3 text-[#676a7c] px-2 py-0.5 shadow-2xl rounded">
