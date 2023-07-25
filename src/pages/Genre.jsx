@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Navbar from "../components/Navbar";
 import Shows from "../components/Shows";
+import Footer from "../components/Footer";
 
 const Movies = () => {
   const [shows, setShows] = useState([]);
@@ -19,48 +20,53 @@ const Movies = () => {
   return (
     <div className="flex flex-col lg:flex-row bg-[rgba(30,30,36,255)]">
       <Navbar />
-      <div className="w-full min-h-screen px-10 py-10">
-        <div>
-          <h2 className="font-bebas text-[2.5rem] text-white">
-            Horror trailers
-          </h2>
-          <div className="h-full overflow-y-scroll">
-            <Shows
-              shows={shows.filter((show) => show.genre === "Horror")}
-            ></Shows>
+
+      <div className="flex flex-col w-full">
+        <div className="w-full min-h-screen px-10 py-10">
+          <div>
+            <h2 className="font-bebas text-[2.5rem] text-white">
+              Horror trailers
+            </h2>
+            <div className="h-full overflow-y-scroll">
+              <Shows
+                shows={shows.filter((show) => show.genre === "Horror")}
+              ></Shows>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-bebas text-[2.5rem] text-white">
+              Science Fiction Trailers
+            </h2>
+            <div className="h-full overflow-y-scroll">
+              <Shows
+                shows={shows.filter((show) => show.genre === "SciFi")}
+              ></Shows>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-bebas text-[2.5rem] text-white">
+              Action Trailers
+            </h2>
+            <div className="h-full overflow-y-scroll">
+              <Shows
+                shows={shows.filter((show) => show.genre === "Action")}
+              ></Shows>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-bebas text-[2.5rem] text-white">Comedy</h2>
+            <div className="h-full overflow-y-scroll">
+              <Shows
+                shows={shows.filter((show) => show.genre === "Comedy")}
+              ></Shows>
+            </div>
           </div>
         </div>
 
-        <div>
-          <h2 className="font-bebas text-[2.5rem] text-white">
-            Science Fiction Trailers
-          </h2>
-          <div className="h-full overflow-y-scroll">
-            <Shows
-              shows={shows.filter((show) => show.genre === "SciFi")}
-            ></Shows>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="font-bebas text-[2.5rem] text-white">
-            Action Trailers
-          </h2>
-          <div className="h-full overflow-y-scroll">
-            <Shows
-              shows={shows.filter((show) => show.genre === "Action")}
-            ></Shows>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="font-bebas text-[2.5rem] text-white">Comedy</h2>
-          <div className="h-full overflow-y-scroll">
-            <Shows
-              shows={shows.filter((show) => show.genre === "Comedy")}
-            ></Shows>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

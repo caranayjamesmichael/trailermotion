@@ -30,7 +30,7 @@ const ShowItem = ({ show }) => {
           </h4>
 
           <div className="flex ml-[-8px]">
-            <p className="mt-3 bg-[rgba(30,30,36,255)] px-2 py-0.5 shadow-2xl rounded">
+            <p className="mt-3 text-[#676a7c] px-2 py-0.5 shadow-2xl rounded">
               <small>{"Release Date: " + show.releaseDate}</small>
             </p>
           </div>
@@ -51,13 +51,13 @@ const ShowItem = ({ show }) => {
           <button
             className={
               hovered
-                ? "bg-green-600 px-5 py-3 rounded-md "
-                : "bg-red-600 px-5 py-3 rounded-md "
+                ? "bg-green-600 px-5 py-3 rounded-md font-bebas"
+                : "bg-red-600 px-5 py-3 rounded-md font-bebas"
             }
             onMouseDown={() => setHovered((prev) => !prev)}
             href="#"
           >
-            {hovered ? "Stop" : "Watch"}
+            {hovered ? "Playing" : "Watch"}
           </button>
         </div>
       </div>

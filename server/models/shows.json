@@ -8,7 +8,7 @@
       "ratings": 4,
       "title": "Bladerunner 2049",
       "trailerURL": "./bladerunner.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2023-07-18",
       "type": "Movie"
     },
     {
@@ -19,7 +19,7 @@
       "ratings": 5,
       "title": "The Dark Knight",
       "trailerURL": "./batman.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2017-05-22",
       "type": "Series"
     },
     {
@@ -30,7 +30,7 @@
       "ratings": 5,
       "title": "21 Jump Street",
       "trailerURL": "./21.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2022-12-6",
       "type": "Movie"
     },
     {
@@ -41,7 +41,7 @@
       "ratings": 3,
       "title": "Valerian",
       "trailerURL": "./valerian.mkv",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2023-04-5",
       "type": "Series"
     },
     {
@@ -52,7 +52,7 @@
       "ratings": 4,
       "title": "Interstellar",
       "trailerURL": "./interstellar.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2022-11-9",
       "type": "Movie"
     },
     {
@@ -63,7 +63,7 @@
       "ratings": 3,
       "title": "Evil Dead: Rise",
       "trailerURL": "./evildead.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2022-08-12",
       "type": "Movie"
     },
     {
@@ -74,7 +74,7 @@
       "ratings": 3,
       "title": "Oppenheimer",
       "trailerURL": "./oppenheimer.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2023-06-19",
       "type": "Movie"
     },
     {
@@ -85,18 +85,18 @@
       "ratings": 3,
       "title": "John Wick Chapter 4",
       "trailerURL": "./johnwick.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2022-10-12",
       "type": "Movie"
     },
     {
       "id": 8,
       "genre": "Comedy",
       "imageURL": "https://i1.wp.com/nwasianweekly.com/wp-content/uploads/2019/12/MOVIES-Jumanji.jpeg?resize=3840%2C2160",
-      "newRelease": true,
+      "newRelease": false,
       "ratings": 5,
       "title": "Jumanji",
       "trailerURL": "./jumanji.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2016-01-26",
       "type": "Movie"
     },
     {
@@ -107,7 +107,7 @@
       "ratings": 5,
       "title": "Bad Boys For Life",
       "trailerURL": "./badboys.mp4",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2023-05-12",
       "type": "Movie"
     },
     {
@@ -118,7 +118,40 @@
       "ratings": 5,
       "title": "The Boys",
       "trailerURL": "./theboys.mkv",
-      "releaseDate": "2022-22-17",
+      "releaseDate": "2022-12-13",
+      "type": "Series"
+    },
+    {
+      "id": 11,
+      "genre": "SciFi",
+      "imageURL": "https://cosmicbook.news/wp-content/uploads/2023/02/the-marvels-poster.jpg",
+      "newRelease": false,
+      "ratings": 5,
+      "title": "The Marvels",
+      "trailerURL": "./themarvels.mp4",
+      "releaseDate": "2022-04-9",
+      "type": "Series"
+    },
+    {
+      "id": 12,
+      "genre": "SciFi",
+      "imageURL": "https://th.bing.com/th/id/R.07baf6d0dda80a2cb7ebe536435a93f5?rik=tx9C5UZ0FuI42Q&riu=http%3a%2f%2ffc02.deviantart.net%2ffs70%2ff%2f2013%2f071%2fb%2f6%2fman_of_steel_poster__poster_fanmade__by_kanombravo-d5qdwwd.jpg&ehk=ERmC1SoC9mcqJMuRWD9duy2IWT7SgCRrEA4EIfIXHR0%3d&risl=&pid=ImgRaw&r=0",
+      "newRelease": false,
+      "ratings": 2,
+      "title": "Man Of Steel",
+      "trailerURL": "./manofsteel.mp4",
+      "releaseDate": "2014-002-2",
+      "type": "Series"
+    },
+    {
+      "id": 13,
+      "genre": "Horror",
+      "imageURL": "https://a.ltrbxd.com/resized/sm/upload/11/qg/4j/a0/quiet-place-part-ii-1200-1200-675-675-crop-000000.jpg?k=4ad692dcb5",
+      "newRelease": false,
+      "ratings": 4,
+      "title": "A Quiet Place Part 2",
+      "trailerURL": "./quietplace.mp4",
+      "releaseDate": "2015-07-18",
       "type": "Series"
     }
   ]
