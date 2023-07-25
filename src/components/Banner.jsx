@@ -30,7 +30,7 @@ const Banner = ({ shows }) => {
           </span>
         </p>
         <p className="absolute bottom-28 left-10 text-white font-bebas" style={{textShadow: "0px 2px 5px black"}}>
-          IMDB: <span>{shows[currentShowIndex].ratings}</span>
+          IMDB: <span>{shows[currentShowIndex].ratings + " ⭐"}</span>
         </p>
         <a href="#showContainer">
           <p className="absolute bottom-10 left-10 bg-red-600 text-white px-7 py-3 rounded-lg shadow-2xl shadow-red-600 font-bebas">
